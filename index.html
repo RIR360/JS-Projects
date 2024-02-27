@@ -9,6 +9,8 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/animista.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -48,53 +50,19 @@
         <div class="py-3 bg-light">
             <div class="container">
 
-                <h3 id="projects" class="py-1 mb-3 border-bottom"># Projects List</h3>
+                <h3 id="projects" class="py-1 mb-3 border-bottom">
+                    <a href="#" onclick="loadProjects()" class="clean">
+                        # Projects List
+                    </a>
+                    <span id="project-id" class="text-muted"></span>
+                </h3>
 
-                <div id="project-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-                    <div class="col">
-                        <div class="card border">
-                            <img src="./images/js-banner.png" alt="">
-                            <div class="card-body">
-                                <h4>Make a Clock</h4>
-                                <p class="card-text">Design a JavaScript clock that is functional and as beautiful as you want it to be.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <button type="button" class="btn btn-sm btn-warning" >Open</button>
-                                    <small class="text-success">Easy</small>
-                                </div>
-                            </div>
-                        </div>
+                <div id="projects-container" class="row g-3">
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
                     </div>
-
-                    <div class="col">
-                        <div class="card border">
-                            <img src="./images/js-banner.png" alt="">
-                            <div class="card-body">
-                                <h4>Make a Stopwatch</h4>
-                                <p class="card-text">Design a JavaScript stopwatch from very basic point such as a simple cuonter.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <button type="button" class="btn btn-sm btn-warning" href="">Open</button>
-                                    <small class="text-success">Easy</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card border opacity-50">
-                            <img src="./images/js-banner.png" alt="">
-                            <div class="card-body">
-                                <h4>Coming Soon...</h4>
-                                <p class="card-text">Coming Soon...</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a class="btn btn-sm btn-warning" href="">Open</a>
-                                    <small class="text-success">Easy</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
             </div>
         </div>
 
