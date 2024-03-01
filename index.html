@@ -18,11 +18,12 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                <span class="navbar-brand pointer fw-bold d-flex align-items-center gap-2"
+                onclick="loadProjects()">
                     <img class="rounded" src="./images/js-logo.png" alt="" height="30">
                     <span class="d-none d-sm-inline">JavaScript</span>
                     Projects
-                </a>
+                </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -45,15 +46,13 @@
         </nav>
     </header>
 
-    <main>
+    <main class="col-md-6 mx-auto">
 
         <div class="py-3 bg-light">
             <div class="container">
 
                 <h3 id="projects" class="py-1 mb-3 border-bottom">
-                    <a href="#" onclick="loadProjects()" class="clean">
-                        # Projects List
-                    </a>
+                    # Projects List
                     <span id="project-id" class="text-muted"></span>
                 </h3>
 
@@ -68,7 +67,7 @@
 
         <div class="container">
 
-            <h3 id="about" class="py-1 mb-3 border-bottom"># About</h3>
+            <h3 id="about" class="py-1 mb-3 border-bottom"># About JavaScript Projects</h3>
 
             This page contains some easy to advanced JavaScript projects that is divided into separate tasks for better understanding. Anyone with knowledge of a little bit JavaScript can progress easily and learn to build a complete a feature of real life projects.
 
@@ -76,7 +75,9 @@
 
     </main>
 
-    <footer class="container py-3 mb-5 text-muted">
+    
+
+    <footer class="container col-md-6 mx-auto py-3 mb-5 text-muted">
         <p>&copy; Rejwan Islam Rizvy (RIR360) - 2024</p>
     </footer>
 

@@ -5,3 +5,9 @@ a.clean {
 .pointer {
     cursor: pointer;
 }
+.task-item:hover {
+    opacity: 0.8;
+}
+.bg-yellow {
+    background-color: #d1d1d1;
+}
